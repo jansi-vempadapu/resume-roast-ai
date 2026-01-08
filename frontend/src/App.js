@@ -10,7 +10,8 @@ function App() {
     formData.append("file", file);
     formData.append("job_desc", jobDesc);
 
-    const res = await fetch("http://127.0.0.1:8000/analyze", {
+    const res = await fetch("https://resume-roast-backend.onrender.com/analyze
+", {
       method: "POST",
       body: formData,
     });
